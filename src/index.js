@@ -1,16 +1,3 @@
-
-/** 
- * Index file for bootstrapping "basic template" server.
- * @module index
- * @requires express
- * @requires body-parser
- * @requires path
- * @requires url
- * @requires cors
- * @requires dotenv
- * @requires routers/user-route
- * @requires routers/secret-route
- */
 import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
@@ -21,24 +8,7 @@ import { userRouter } from "./routers/user-route.js";
 import { secretRouter } from "./routers/secret-route.js";
 import dotenv from 'dotenv';
 
-
-
-
-/**
- * Express application object.
- * @namespace app
- * @memberof module:index
- * @type {express}
- * @const
- */
 const app = express();
-/**
- * The path.dirname() method returns the directories of a file path.
- * @namespace __dirname
- * @memberof module:index
- * @type {string}
- * @const
- */
 const __dirname = dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, ".env/dev.env")})
 dotenv.config();
