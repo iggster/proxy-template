@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>database/utilities/pg-pool.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/iggster/proxy-template" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Modules</h3><ul><li><a href="module-handlers_secret-db-handler.html">handlers/secret-db-handler</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-handlers_secret-db-handler.html#.SecretQuery">SecretQuery</a></li></ul></li><li><a href="module-handlers_user-db-handler.html">handlers/user-db-handler</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-handlers_user-db-handler.html#.UserQuery">UserQuery</a></li></ul></li><li><a href="module-index.html">index</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-index.html#.__dirname">__dirname</a></li><li data-type='member' style='display: none;'><a href="module-index.html#.app">app</a></li></ul></li><li><a href="module-proxies_secret-proxy.html">proxies/secret-proxy</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-proxies_secret-proxy.html#.SecretProxy">SecretProxy</a></li></ul></li><li><a href="module-proxies_user-proxy.html">proxies/user-proxy</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-proxies_user-proxy.html#.UserProxy">UserProxy</a></li></ul></li><li><a href="module-routers_secret-route.html">routers/secret-route</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-routers_secret-route.html#.secretRouter">secretRouter</a></li></ul></li><li><a href="module-routers_user-route.html">routers/user-route</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-routers_user-route.html#.userRoute">userRoute</a></li></ul></li><li><a href="module-schemas_secret-schema.html">schemas/secret-schema</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-schemas_secret-schema.html#.secretSchema">secretSchema</a></li></ul></li><li><a href="module-schemas_user-schema.html">schemas/user-schema</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-schemas_user-schema.html#.userSchema">userSchema</a></li></ul></li><li><a href="module-utilities_pg-pool.html">utilities/pg-pool</a><ul class='members'><li data-type='member' style='display: none;'><a href="module-utilities_pg-pool.html#.pgPool">pgPool</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="module-handlers_secret-db-handler.secretCreate.html">handlers/secret-db-handler.secretCreate</a></li><li><a href="module-handlers_secret-db-handler.secretDelete.html">handlers/secret-db-handler.secretDelete</a></li><li><a href="module-handlers_secret-db-handler.secretFindAll.html">handlers/secret-db-handler.secretFindAll</a></li><li><a href="module-handlers_secret-db-handler.secretFindByUser.html">handlers/secret-db-handler.secretFindByUser</a></li><li><a href="module-handlers_secret-db-handler.secretFindOne.html">handlers/secret-db-handler.secretFindOne</a></li><li><a href="module-handlers_secret-db-handler.secretUpdate.html">handlers/secret-db-handler.secretUpdate</a></li><li><a href="module-handlers_user-db-handler.userCreate.html">handlers/user-db-handler.userCreate</a></li><li><a href="module-handlers_user-db-handler.userDelete.html">handlers/user-db-handler.userDelete</a></li><li><a href="module-handlers_user-db-handler.userFindAll.html">handlers/user-db-handler.userFindAll</a></li><li><a href="module-handlers_user-db-handler.userFindOne.html">handlers/user-db-handler.userFindOne</a></li><li><a href="module-handlers_user-db-handler-userUpdate.html">handlers/user-db-handler~userUpdate</a></li><li><a href="module-proxies_secret-proxy.secretCreate.html">proxies/secret-proxy.secretCreate</a></li><li><a href="module-proxies_secret-proxy.secretDelete.html">proxies/secret-proxy.secretDelete</a></li><li><a href="module-proxies_secret-proxy.secretFindAll.html">proxies/secret-proxy.secretFindAll</a></li><li><a href="module-proxies_secret-proxy.secretFindByUser.html">proxies/secret-proxy.secretFindByUser</a></li><li><a href="module-proxies_secret-proxy.secretFineOne.html">proxies/secret-proxy.secretFineOne</a></li><li><a href="module-proxies_secret-proxy.secretUpdate.html">proxies/secret-proxy.secretUpdate</a></li><li><a href="module-proxies_user-proxy.userCreate.html">proxies/user-proxy.userCreate</a></li><li><a href="module-proxies_user-proxy.userDelete.html">proxies/user-proxy.userDelete</a></li><li><a href="module-proxies_user-proxy.userFindAll.html">proxies/user-proxy.userFindAll</a></li><li><a href="module-proxies_user-proxy.userFineOne.html">proxies/user-proxy.userFineOne</a></li><li><a href="module-proxies_user-proxy.userUpdate.html">proxies/user-proxy.userUpdate</a></li><li><a href="module-routers_secret-route-secretCreate.html">routers/secret-route~secretCreate</a></li><li><a href="module-routers_secret-route-secretDelete.html">routers/secret-route~secretDelete</a></li><li><a href="module-routers_secret-route-secretFindAll.html">routers/secret-route~secretFindAll</a></li><li><a href="module-routers_secret-route-secretFindByUser.html">routers/secret-route~secretFindByUser</a></li><li><a href="module-routers_secret-route-secretFindOne.html">routers/secret-route~secretFindOne</a></li><li><a href="module-routers_secret-route-secretUpdate.html">routers/secret-route~secretUpdate</a></li><li><a href="module-routers_user-route-userCreate.html">routers/user-route~userCreate</a></li><li><a href="module-routers_user-route-userDelete.html">routers/user-route~userDelete</a></li><li><a href="module-routers_user-route-userFindAll.html">routers/user-route~userFindAll</a></li><li><a href="module-routers_user-route-userFindOne.html">routers/user-route~userFindOne</a></li><li><a href="module-routers_user-route-userUpdate.html">routers/user-route~userUpdate</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">database/utilities/pg-pool.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+/**
+ * A node-postgres connection pool.
+ * @module utilities/pg-pool
+ * @requires pg
+ * @requires dotenv
+ * @requires Pool
+ */
+import pg from "pg";
+import dotenv from 'dotenv';
+import path from "path";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const { Pool } = pg;
+const __dirname = dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.resolve(__dirname, "../../../.env/dev.env")})
+
+
+
+/**
+* Returns a handle to the Postgres connection pool object.
+* @namespace pgPool
+* @memberof module:utilities/pg-pool
+* @property {string} user  - Postgres user.
+* @property {string} password  - Postgres database password.
+* @property {string} host  - Name or IP of host computer.
+* @property {number} port  - Postgres listening port.
+* @property {string} database  - Database name.
+* @property {number} max - Maximum number of simultaneous pool connections.
+* @property {number} idleTimeoutMillis  - Time out before dropping a user connection.
+* @property {number} connectionTimeoutMillis - Time out before dropping a database connection.
+* @const
+*/
+
+ console.log(process.env.PG_PORT);
+ console.log(process.env.PG_PWD)
+
+ const pgPool = new Pool({
+  user:  process.env.PG_USER,
+  password: process.env.PG_PWD,
+  host: process.env.PG_HOST,
+  port: process.env.PG_PORT,
+  database: process.env.PG_DB,
+  max: 20,
+  idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 2000,
+});
+
+export { pgPool };
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Thu Aug 08 2024 23:08:03 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>
